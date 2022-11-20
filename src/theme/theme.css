@@ -1,0 +1,94 @@
+:root {
+  --pastel-1: #f8f1f3;
+  --pastel-2: #ecd1c8;
+  --pastel-3: #f5cdaf;
+  --pastel-4: #f6dfb1;
+  --pastel-5: #f6edb2;
+}
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
+
+@keyframes background-body {
+  0% {
+    background: var(--pastel-1);
+  }
+  20% {
+    background: var(--pastel-2);
+  }
+  40% {
+    background: var(--pastel-3);
+  }
+  60% {
+    background: var(--pastel-4);
+  }
+  80% {
+    background: var(--pastel-5);
+  }
+  100% {
+    background: var(--pastel-1);
+  }
+}
+body {
+  background-color: #e6e7e9;
+}
+
+.custom-fit-big {
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+  height: 408px;
+}
+
+.custom-fit {
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+  height: 200px;
+}
+
+.custom-logo {
+  font-family: "Dancing Script", cursive;
+  font-size: 45px;
+  color: #dca12d;
+}
+
+.light-text {
+  font-family: "Dancing Script", cursive;
+  font-size: 20px;
+  color: black;
+}
+
+.main-container {
+  background-image: url(https://images.unsplash.com/photo-1551468307-8c1e3c78013c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: cover;
+}
+
+.top-text {
+  font-size: 17px;
+  line-height: 17px;
+  /* background: $pastel-1;
+  animation: background-body 10s infinite linear; */
+}
+
+.vertical-line {
+  margin: auto;
+  width: 20%;
+  margin-top: 10px;
+}
+
+.icon {
+  width: 70px;
+  height: 100px;
+  position: fixed;
+  cursor: pointer;
+  padding-left: 10px;
+}
+
+.small {
+  font-size: 11px;
+  color: #999;
+  display: block;
+  margin-top: -10px;
+}
